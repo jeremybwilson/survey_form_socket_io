@@ -1,0 +1,40 @@
+.container {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+h1, h2, h3, h4, h5, p {
+    display: block;
+    width: 100%;
+}
+
+nav, form { 
+    width: 100%;
+}
+
+label, input, select, textarea, select.form-control {
+    width: 49%;
+}
+
+select.form-control{
+    display: inline-block;
+}
+
+.emitted-info {
+    background-color: rgb(97, 170, 97);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 1em;
+}
+
+.results ul {
+    list-style-type: none;
+}
+
+.col.red, .col.error {
+    color: red;
+    font-weight: bold;
+}

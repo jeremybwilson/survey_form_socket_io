@@ -1,0 +1,46 @@
+<% include partials/header %>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section>
+                        <h1><%= title %></h1>
+                        <div id="formResult">
+                            <h3 id="numberDiv"></h3>
+                        </div>
+                        <form action='/process' method='POST' id='surveyForm'>
+                            <div class="form-group">
+                                <label for="name">Your name: </label>
+                                <input id='name' type="text" name="name" placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Dojo Location: </label>
+                                <select id='location' name="location" class="form-control">
+                                <option value="" default>Choose location</option>
+                                <option value="Seattle">Seattle</option>
+                                <option value="Burbank">Burbank</option>
+                                <option value="San Jose">San Jose</option>
+                                <option value="Chicago">Chicago</option>
+                                <option value="Dallas">Dallas</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="language">Favorite language: </label>
+                                <select id='language' name="language" class="form-control">
+                                <option value="" default>Choose language</option>
+                                <option value="Python">Python</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="Angular">Angular</option>
+                                <option value="React">React</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Comment (optional): </label>
+                                <textarea id='comment' name="comment" class="form-control" rows="5" cols="5"></textarea>
+                                <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+<% include partials/footer %>

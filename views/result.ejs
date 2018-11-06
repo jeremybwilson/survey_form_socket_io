@@ -1,0 +1,41 @@
+<% include partials/header %>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1><%= title %></h1>
+                    <h3>Submitted Information</h3>
+                </div>
+            </div>
+            <div class="row">
+                <% if(results){ %>
+                    <div class="col-3">
+                        <section class="results">
+                            <ul>
+                                <li>Name: </li>
+                                <li>Dojo Location: </li>
+                                <li>Favorite Language: </li>
+                                <li>Comment: </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-9">
+                        <section class="results">
+                            <ul>
+                                <li><%= name %></li>
+                                <li><%= location %></li>
+                                <li><%= language %></li>
+                                <li><%= comment %></li>
+                            </ul>
+                        </section>
+                    </div>
+            </div>
+                <%  } else { %>
+            <div class="row">
+                <div class="col"></div>
+                    <p class="error">There was an error.  No form data submitted.</p>
+                <% } %>
+                <% include partials/nav %>
+                </div>
+            </div>
+        </div>
+<% include partials/footer %>
